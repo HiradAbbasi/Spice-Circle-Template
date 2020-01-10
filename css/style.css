@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  text-transform: capitalize;
+  font-family: "Century Gothic", sans-serif; }
+
+h1 {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  padding: 25px 50px 25px 0; }
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-family: "Century Gothic", sans-serif; }
+
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  background-color: black;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  float: left; }
+
+.topnav a:hover {
+  color: white; }
+
+.topnav a.active {
+  color: white; }
+
+.topnav .icon {
+  display: none;
+  position: relative;
+  top: 30px; }
+
+#orderNow {
+  width: 200px;
+  height: 80px;
+  cursor: pointer; }
+
+#orderNow1 {
+  overflow: hidden;
+  height: 100px;
+  display: none; }
+
+#OrderOnlineText {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 100px;
+  padding: 10px 0 10px 0;
+  margin-top: 20px; }
+
+@media screen and (max-width: 1045px) {
+  .topnav {
+    overflow: hidden;
+    float: left;
+    display: block;
+    background-color: black;
+    width: 100%; }
+  .topnav a:not(:first-child) {
+    display: none; }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    background-color: black; }
+  h1 {
+    position: relative;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    padding: 26.5px 40px 25px 10px; }
+  #orderNow {
+    width: 800px;
+    height: 80px;
+    display: none; }
+  #orderNow1 {
+    width: 200px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    cursor: pointer; }
+  #OrderOnlineText {
+    border-radius: 0px;
+    padding: 10px 0 10px 0;
+    position: absolute;
+    display: block;
+    margin: 0; }
+  #OrderOnlineText1 {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px 10px 0; } }
+
+@media screen and (max-width: 1045px) {
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0px;
+    top: 30px; }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
