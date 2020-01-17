@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    text-transform: capitalize;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.leftSideMenu {
+    position: relative;
+    display: inline-flex;
+    justify-content: left;
+    border: 2px solid gray;
+    width: 450px;
+    height: 500px;
+    margin: 10px;
+}
+
+.cols {
+    width: 20%;
+    float: left;
+}
+
+.rows {
+    height: 100px;
+}
+
+#VegeterianAppetizer {
+    color: red;
+    position: relative;
+    display: block;
+    justify-content: center;
+    border: 2px solid orange;
+    height: 100px;
+}
+
+#ChickenAppetizer {
+    color: blue;
+    position: relative;
+    display: block;
+    justify-content: center;
+    border: 2px solid orange;
+    height: 100px;
+}
+
+#SeafoodAppetizer {
+    color: green;
+    position: relative;
+    display: block;
+    justify-content: center;
+    border: 2px solid orange;
+    height: 100px;
+}
+
+#Salad {
+    color: purple;
+    position: relative;
+    display: block;
+    justify-content: center;
+    border: 2px solid orange;
+    width: 200px;
+    height: 100px;
+}
+
+.rightSideMenu {
+    position: relative;
+    display: inline-flex;
+    float: right;
+    border: 2px solid gray;
+    width: 200px;
+    height: 500px;
+    margin: 10px;
+}

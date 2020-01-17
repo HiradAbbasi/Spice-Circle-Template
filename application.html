@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a id="dontShow">
+            <h1>SPICE CIRCLE</h1>
+        </a>
+        <a href="index.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="#">LOCATIONS</a>
+        <a id="doShow">
+            <h1>SPICE CIRCLE</h1>
+        </a>
+        <a href="#">CATERING AND EVENTS</a>
+        <a href="application.html" class="active">APPLICATION</a>
+        <a href="#">CONTACT</a>
+        <a>
+            <div id="orderNow">
+                <p id="OrderOnlineText">Order Online</p>
+            </div>
+        </a>
+    </div>
+    <div id="orderNow1">
+        <p id="OrderOnlineText1">Order Online</p>
+    </div>
+    <div id="flex-wrapper">
+        <div id="error"></div>
+        <div class="item-wrapper">
+            <form>
+                <label id="FirstName" for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter First name" />
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter Last name" />
+                <label for="telephone">Telephone Number:</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="(555)-555-5555" />
+                <label for="email">E-mail Address:</label>
+                <input type="email" id="email" name="email" placeholder="user@example.com" />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a password" />
+                <label for="confirm">Confirm Your Password:</label>
+                <input type="password" id="confirm" name="confirm" placeholder="Re-enter your password" />
+                <input type="button" id="sign-up" value="Send Application" onclick="signUp()" />
+                <input type="button" id="show-info" value="Show Information" onclick="showInfo()" />
+            </form>
+        </div>
+    </div>
+    </main>
+    <script src="javascript/signUp.js"></script>
+    <script src="javascript/javascript.js"></script>
+    </div>
+</body>
+
+</html>
