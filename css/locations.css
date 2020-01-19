@@ -1,0 +1,47 @@
+#floatLeft {
+    position: relative;
+    top: 20px;
+}
+
+h2 {
+    color: orange;
+    font-size: 30px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+#OpeningTime {
+    color: orange;
+}
+
+#WeekDay {
+    color: black;
+    font-size: 22px;
+    position: relative;
+    top: 30px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1010px) {
+    #googleMapLocation {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #googleMapLocation {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    #googleMapLocation {
+        width: auto;
+    }
+    #WeekDay {
+        font-size: 16px;
+    }
+}

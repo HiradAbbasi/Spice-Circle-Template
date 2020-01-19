@@ -4,68 +4,199 @@
     font-family: "Century Gothic", sans-serif;
 }
 
+#menuHeader {
+    color: orange;
+    margin: 20px 0 5px 0;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    text-rendering: optimizeSpeed;
+}
+
+#menuUnderneath {
+    color: rgba(0, 0, 0, 0.800);
+    margin: 5px;
+    font-size: 21px;
+    text-align: center;
+    text-rendering: optimizeSpeed;
+}
+
 .leftSideMenu {
-    position: relative;
-    display: inline-flex;
-    justify-content: left;
-    border: 2px solid gray;
-    width: 450px;
-    height: 500px;
-    margin: 10px;
-}
-
-.cols {
-    width: 20%;
-    float: left;
-}
-
-.rows {
-    height: 100px;
-}
-
-#VegeterianAppetizer {
-    color: red;
-    position: relative;
-    display: block;
+    position: absolute;
+    display: inline-block;
     justify-content: center;
-    border: 2px solid orange;
-    height: 100px;
-}
-
-#ChickenAppetizer {
-    color: blue;
-    position: relative;
-    display: block;
-    justify-content: center;
-    border: 2px solid orange;
-    height: 100px;
-}
-
-#SeafoodAppetizer {
-    color: green;
-    position: relative;
-    display: block;
-    justify-content: center;
-    border: 2px solid orange;
-    height: 100px;
-}
-
-#Salad {
-    color: purple;
-    position: relative;
-    display: block;
-    justify-content: center;
-    border: 2px solid orange;
-    width: 200px;
-    height: 100px;
+    width: 520px;
+    height: auto;
+    right: 53%;
+    margin-top: 15px;
 }
 
 .rightSideMenu {
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    width: 520px;
+    height: auto;
+    left: 53%;
+    margin-top: 15px;
+}
+
+#MenuItemHeader {
     position: relative;
-    display: inline-flex;
-    float: right;
-    border: 2px solid gray;
-    width: 200px;
-    height: 500px;
-    margin: 10px;
+    display: inline-block;
+    background-color: #464646;
+    color: orange;
+    font-style: italic;
+    width: 96.2%;
+    font-size: 22px;
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
+}
+
+#MenuItemSubHeader {
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+    padding: 10px 0px 2px 20px;
+}
+
+#VegeterianAppetizer {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#ChickenAppetizer {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#SeafoodAppetizer {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#Salads {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#ThaliCombos {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#VegeterianMeals {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#NonVegMeals {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#VegeterianEntrees {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#ChickenEntrees {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#GoatandLambEntrees {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#SeafoodEntrees {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#Biryani {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#Breads {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#Extras {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#Drinks {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#Desserts {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#price {
+    color: orange;
+    font-weight: bold;
+}
+
+p {
+    padding: 3px 0px 0px 30px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 1145px) {
+    .rightSideMenu {
+        position: static;
+        display: inline-block;
+        justify-content: center;
+        top: 2270px;
+        width: 99%;
+        margin-left: 3px;
+    }
+    .leftSideMenu {
+        position: static;
+        display: inline-block;
+        justify-content: center;
+        width: 99%;
+        margin-left: 3px;
+    }
 }
