@@ -6,108 +6,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="javascript/javascript.js"></script>
+    <script src="javascript/loading.js"></script>
 
 </head>
 
-<body>
-    <div class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a id="dontShow">
-            <h1>SPICE CIRCLE</h1>
-        </a>
-        <a href="index.html" class="active">ABOUT</a>
-        <a href="menu.html">MENU</a>
-        <a href="location.html">LOCATIONS</a>
-        <a id="doShow">
-            <h1>SPICE CIRCLE</h1>
-        </a>
-        <a href="#contact">CATERING AND EVENTS</a>
-        <a href="application.html">APPLICATION</a>
-        <a href="#about">CONTACT</a>
-        <a>
-            <div id="orderNow">
-                <p id="OrderOnlineText">Order Online</p>
-            </div>
-        </a>
-    </div>
-    <div id="orderNow1">
-        <p id="OrderOnlineText1">Order Online</p>
-    </div>
-    <div>
-        <h1 id="homePageFont">DISCOVER NEW TASTES</h1>
-        <h2 id="homePageFont">SPICE CIRCLE</h2>
-    </div>
-    <div align="center">
+<body onload="myFunction()">
+    <!-- loading animation-->
+    <div id="pagesLoading"></div>
+    <div id="location" class="animate-bottom" style="display: none;">
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a id="dontShow">
+                <h1>SPICE CIRCLE</h1>
+            </a>
+            <a href="index.html" class="active">ABOUT</a>
+            <a href="menu.html">MENU</a>
+            <a href="location.html">LOCATIONS</a>
+            <a id="doShow">
+                <h1>SPICE CIRCLE</h1>
+            </a>
+            <a href="#contact">CATERING AND EVENTS</a>
+            <a href="application.html">APPLICATION</a>
+            <a href="#about">CONTACT</a>
+            <a>
+                <div id="orderNow">
+                    <p id="OrderOnlineText">Order Online</p>
+                </div>
+            </a>
+        </div>
+        <div id="orderNow1">
+            <p id="OrderOnlineText1">Order Online</p>
+        </div>
         <div>
-            <div id="picturesDescription1">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                    book.
-                </p>
+            <h1 id="homePageFont">DISCOVER NEW TASTES</h1>
+            <h2 id="homePageFont">SPICE CIRCLE</h2>
+        </div>
+        <div align="center">
+            <div>
+                <div id="picturesDescription1">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                </div>
+            </div>
+            <img id="mainPagePicOne" src="images/IMG_7281.JPG" alt="" width="450" height="280">
+
+            <img id="mainPagePicTwo" src="images/IMG_7493.JPG" alt=" " width="450" height="280">
+            <div>
+                <div id="picturesDescription2">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                </div>
             </div>
         </div>
-        <img id="mainPagePicOne" src="images/IMG_7281.JPG" alt="" width="450" height="280">
-
-        <img id="mainPagePicTwo" src="images/IMG_7493.JPG" alt=" " width="450" height="280">
-        <div>
-            <div id="picturesDescription2">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                    book.
-                </p>
+        <div id="slide"></div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">Spice Circle</div>
+                <a>
+                    <img src="images/slideShow/79036421_145656940214649_555993025524793344_o.jpg" style="width:100% ">
+                </a>
+                <div class="text "></div>
             </div>
-        </div>
-    </div>
-    <div id="slide"></div>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">Spice Circle</div>
-            <a>
-                <img src="images/slideShow/79036421_145656940214649_555993025524793344_o.jpg" style="width:100% ">
-            </a>
-            <div class="text "></div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext ">Spice Circle</div>
-            <a>
-                <img src="images/slideShow/79716138_156074505839559_7100253360367861760_n.jpg" style="width:100%">
-            </a>
-            <div class="text "></div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">Spice Circle</div>
-            <a>
-                <img src="images/slideShow/80029405_156871985759811_8488460642397716480_n.jpg" style="width:100%">
-            </a>
-            <div class="text"></div>
-        </div>
+            <div class="mySlides fade">
+                <div class="numbertext ">Spice Circle</div>
+                <a>
+                    <img src="images/slideShow/79716138_156074505839559_7100253360367861760_n.jpg" style="width:100%">
+                </a>
+                <div class="text "></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">Spice Circle</div>
+                <a>
+                    <img src="images/slideShow/80029405_156871985759811_8488460642397716480_n.jpg" style="width:100%">
+                </a>
+                <div class="text"></div>
+            </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">Spice Circle</div>
-            <a>
-                <img src="images/slideShow/82307173_160020885444921_5715772933129895936_n.jpg" style="width:100%">
-            </a>
-            <div class=" text "></div>
-        </div>
+            <div class="mySlides fade">
+                <div class="numbertext">Spice Circle</div>
+                <a>
+                    <img src="images/slideShow/82307173_160020885444921_5715772933129895936_n.jpg" style="width:100%">
+                </a>
+                <div class=" text "></div>
+            </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">Spice Circle</div>
-            <a>
-                <img id="scalingImg7" src="images/slideShow/82865323_164500221663654_959096459536367616_n.jpg" style="width:100%">
-            </a>
+            <div class="mySlides fade">
+                <div class="numbertext">Spice Circle</div>
+                <a>
+                    <img id="scalingImg7" src="images/slideShow/82865323_164500221663654_959096459536367616_n.jpg" style="width:100%">
+                </a>
+            </div>
         </div>
         <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
         <a class="next " onclick="plusSlides(1) ">&#10095;</a>
-    </div>
 
-    <div style="text-align:center ">
-        <span class="dot " onclick="currentSlide(1) "></span>
-        <span class="dot " onclick="currentSlide(2) "></span>
-        <span class="dot " onclick="currentSlide(3) "></span>
-        <span class="dot " onclick="currentSlide(4) "></span>
-        <span class="dot " onclick="currentSlide(5) "></span>
+        <div style="text-align:center ">
+            <span class="dot " onclick="currentSlide(1) "></span>
+            <span class="dot " onclick="currentSlide(2) "></span>
+            <span class="dot " onclick="currentSlide(3) "></span>
+            <span class="dot " onclick="currentSlide(4) "></span>
+            <span class="dot " onclick="currentSlide(5) "></span>
+        </div>
     </div>
-
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
