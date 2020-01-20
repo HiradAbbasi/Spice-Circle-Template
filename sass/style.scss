@@ -81,11 +81,25 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: BlackJack;
+    font-family: "Century Gothic", sans-serif;
     font-size: 50px;
-    color: gray;
-    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 2;
+}
+
+#homePageFontSub {
+    position: relative;
+    top: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 50px;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    font-style: italic;
 }
 
 @font-face {
@@ -219,7 +233,7 @@ img {
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 800px;
+    max-width: 1000px;
     position: relative;
     margin: auto;
     top: 900px;
@@ -517,7 +531,7 @@ img {
     margin: -75px 0 0 -75px;
     border: 16px solid #000;
     border-radius: 100%;
-    border-top: 16px solid #ffb400;
+    border-top: 16px solid orange;
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
