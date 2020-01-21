@@ -125,29 +125,33 @@ h1 {
 
 #mainPagePicOne {
   position: relative;
-  top: 680px;
-  left: 0px; }
+  top: 255px;
+  right: 225px; }
 
 #picturesDescription1 {
-  border: 1px gray solid;
+  border: 3px orange solid;
   position: relative;
-  top: 870px;
-  width: 450px;
+  top: 525px;
+  width: 410px;
   left: 230px;
-  display: block; }
+  display: block;
+  padding: 20px 10px 20px 10px;
+  text-align: justify; }
 
 #mainPagePicTwo {
   position: relative;
-  top: 960px;
-  right: 0px; }
+  top: 1080px;
+  left: 230px; }
 
 #picturesDescription2 {
-  border: 1px gray solid;
+  border: 3px orange solid;
   position: relative;
-  top: 770px;
-  width: 450px;
+  top: 340px;
+  width: 415px;
   right: 230px;
-  display: block; }
+  display: block;
+  padding: 20px 10px 20px 10px;
+  text-align: justify; }
 
 .topnav a:hover {
   color: orange; }
@@ -203,7 +207,7 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  top: 900px;
+  top: 550px;
   /*right: 200px;*/ }
 
 /* Number text (1/10 etc) */
@@ -294,36 +298,34 @@ img {
     text-align: center;
     padding: 10px 0px 10px 0; }
   #mainPagePicOne {
-    padding-top: 50px;
-    position: relative;
-    top: 600px;
+    top: 730px;
+    right: 0px;
     width: 75%;
-    height: 80%;
-    display: flex;
-    justify-content: center; }
+    height: 80%; }
   #picturesDescription1 {
-    border: 1px gray solid;
+    border: 3px orange solid;
     position: relative;
     display: block;
-    top: 1010px;
+    top: 700px;
     width: 75%;
-    height: 80%;
-    left: 0px; }
+    left: 0px;
+    padding: 20px 10px 20px 10px; }
   #mainPagePicTwo {
-    padding-top: 50px;
     position: relative;
-    top: 800px;
+    top: 650px;
+    left: 0px;
     width: 75%;
     height: 80%;
     display: flex;
     justify-content: center; }
   #picturesDescription2 {
-    border: 1px gray solid;
+    border: 3px orange solid;
     position: relative;
-    top: 840px;
+    display: block;
+    top: 770px;
     width: 75%;
-    height: 80%;
-    left: 0px; }
+    left: 0px;
+    padding: 20px 10px 20px 10px; }
   /* Slideshow container */
   .slideshow-container {
     position: relative;

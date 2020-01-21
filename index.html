@@ -44,90 +44,90 @@
             <h2 id="homePageFontSub">SPICE CIRCLE</h2>
         </div>
         <div align="center">
-            <div>
+            <div class="leftFood">
+                <img id="mainPagePicTwo" src="images/IMG_7281.JPG" alt=" " width="450" height="280">
                 <div id="picturesDescription1">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book.
+                    <p>Rogan josh consists of pieces of lamb or mutton braised with a gravy flavoured with garlic, ginger and aromatic spices (cloves, bay leaves, cardamom, and cinnamon), and in some versions incorporating onions or yogurt. After initial
+                        braising, the dish may be finished using the dampokhtak slow cooking technique. Its characteristic deep red colour traditionally comes from dried flowers or root of Alkanna tinctoria (ratan jot) and from liberal amounts of dried,
+                        deseeded Kashmiri chilies (lal mirch).
                     </p>
                 </div>
             </div>
-            <img id="mainPagePicOne" src="images/IMG_7281.JPG" alt="" width="450" height="280">
+            <div class="rightFood">
+                <img id="mainPagePicOne" src="images/IMG_7493.JPG" alt="" width="450" height="280">
 
-            <img id="mainPagePicTwo" src="images/IMG_7493.JPG" alt=" " width="450" height="280">
-            <div>
                 <div id="picturesDescription2">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book.
+                    <p>Biryani, also known as biriyani, biriani, birani or briyani, is a mixed rice dish with its origins among the Muslims of the Indian subcontinent. It can be compared to mixing a curry, later combining it with semi-cooked rice separately
                     </p>
                 </div>
             </div>
-        </div>
-        <div id="darkBackground">
-            <div id="slide"></div>
-        </div>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="numbertext">Spice Circle</div>
-                <a>
-                    <img src="images/slideShow/79036421_145656940214649_555993025524793344_o.jpg" style="width:100%">
-                </a>
-                <div class="text "></div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext ">Spice Circle</div>
-                <a>
-                    <img src="images/slideShow/79716138_156074505839559_7100253360367861760_n.jpg" style="width:100%">
-                </a>
-                <div class="text "></div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">Spice Circle</div>
-                <a>
-                    <img src="images/slideShow/80029405_156871985759811_8488460642397716480_n.jpg" style="width:100%">
-                </a>
-                <div class="text"></div>
-            </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">Spice Circle</div>
-                <a>
-                    <img src="images/slideShow/82307173_160020885444921_5715772933129895936_n.jpg" style="width:100%">
-                </a>
-                <div class=" text "></div>
+            <div id="darkBackground">
+                <div id="slide"></div>
             </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">Spice Circle</div>
+                    <a>
+                        <img src="images/slideShow/79036421_145656940214649_555993025524793344_o.jpg" style="width:100%">
+                    </a>
+                    <div class="text "></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext ">Spice Circle</div>
+                    <a>
+                        <img src="images/slideShow/79716138_156074505839559_7100253360367861760_n.jpg" style="width:100%">
+                    </a>
+                    <div class="text "></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">Spice Circle</div>
+                    <a>
+                        <img src="images/slideShow/80029405_156871985759811_8488460642397716480_n.jpg" style="width:100%">
+                    </a>
+                    <div class="text"></div>
+                </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">Spice Circle</div>
-                <a>
-                    <img src="images/slideShow/82865323_164500221663654_959096459536367616_n.jpg" style="width:100%">
-                </a>
+                <div class="mySlides fade">
+                    <div class="numbertext">Spice Circle</div>
+                    <a>
+                        <img src="images/slideShow/82307173_160020885444921_5715772933129895936_n.jpg" style="width:100%">
+                    </a>
+                    <div class=" text "></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">Spice Circle</div>
+                    <a>
+                        <img src="images/slideShow/82865323_164500221663654_959096459536367616_n.jpg" style="width:100%">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {
-                slideIndex = 1
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 5000);
             }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000);
-        }
-    </script>
+        </script>
 </body>
 
 </html>
