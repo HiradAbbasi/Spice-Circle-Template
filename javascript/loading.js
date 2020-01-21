@@ -7,5 +7,4 @@ function myFunctionLoading() {
 function showPage() {
     document.getElementById("pagesLoading").style.display = "none";
     document.getElementById("location").style.display = "block";
-    document.getElementsIdName("myTopnav").style.display = "none";
 }
