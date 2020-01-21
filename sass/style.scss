@@ -1,524 +1,528 @@
-﻿* {
-    margin: 0;
-    text-transform: capitalize;
-    font-family: "Century Gothic", sans-serif;
-}
-
-input[type=text],
-select,
-textarea {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-input[type=submit] {
-    background-color: orange;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Century Gothic", sans-serif;
-    font-weight: bold;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-    top: 10%;
-    left: 30%;
-    width: 50%;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
-
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-h1 {
-    position: relative;
-    display: inline-block;
-    background-color: #464646;
-    color: orange;
-    font-size: 22px;
-    padding: 25px 55px 25px 55px;
-}
-
-#homePageFont {
-    position: relative;
-    top: 250px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 50px;
-    color: white;
-    padding-top: 30px;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 2;
-}
-
-#homePageFontSub {
-    position: relative;
-    top: 250px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 50px;
-    padding-bottom: 30px;
-    color: orange;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 2;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "BlackJack";
-    src: url("font/blackjack.otf");
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #464646;
-    display: flex;
-    justify-content: center;
-    text-transform: capitalize;
-    font-family: "Century Gothic", sans-serif;
-    a {
+﻿    * {
+        margin: 0;
+        text-transform: capitalize;
+        font-family: "Century Gothic", sans-serif;
+    }
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 90%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+    
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+    
+    input[type=submit] {
+        background-color: orange;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Century Gothic", sans-serif;
+        font-weight: bold;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
         position: relative;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 0px 20px 0px 20px;
-        text-decoration: none;
-        background-color: #464646;
-        font-size: 15px;
-        display: flex;
-        align-items: center;
+        top: 10%;
+        left: 30%;
+        width: 50%;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    
+    .col-25 {
         float: left;
+        width: 25%;
+        margin-top: 6px;
     }
-}
-
-#slide {
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 900px;
-    position: absolute;
-    top: 80px;
-    z-index: -1;
-}
-
-#mainPagePicOne {
-    position: relative;
-    top: 255px;
-    right: 225px;
-}
-
-#picturesDescription1 {
-    border: 3px orange solid;
-    position: relative;
-    top: 525px;
-    width: 410px;
-    left: 230px;
-    display: block;
-    padding: 20px 10px 20px 10px;
-    text-align: justify;
-}
-
-#mainPagePicTwo {
-    position: relative;
-    top: 1080px;
-    left: 230px;
-}
-
-#picturesDescription2 {
-    border: 3px orange solid;
-    position: relative;
-    top: 340px;
-    width: 415px;
-    right: 230px;
-    display: block;
-    padding: 20px 10px 20px 10px;
-    text-align: justify;
-}
-
-.topnav a:hover {
-    color: orange;
-}
-
-.topnav a.active {
-    color: orange;
-}
-
-.topnav .icon {
-    display: none;
-    position: relative;
-    top: 30px;
-}
-
-#dontShow {
-    display: none;
-}
-
-#orderNow {
-    position: relative;
-    width: 200px;
-    height: 80px;
-    cursor: pointer;
-}
-
-#orderNow1 {
-    overflow: hidden;
-    height: 100px;
-    display: none;
-}
-
-#OrderOnlineText {
-    background-color: orange;
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 17px;
-    text-align: center;
-    border-radius: 100px;
-    padding: 10px 0 10px 0;
-    margin-top: 20px;
-}
-
-#imageBackground {
-    width: 100%;
-}
-
-img {
-    z-index: 1;
-}
-
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-}
-
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    top: 550px;
-    /*right: 200px;*/
-}
-
-
-/* Number text (1/10 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0px;
-}
-
-
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-
-/* On smaller screens, decrease text size */
-
-@media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
-
-@media screen and (max-width: 1290px) {
-    .topnav {
-        overflow: hidden;
+    
+    .col-75 {
         float: left;
-        display: block;
-        background-color: black;
-        width: 100%;
-        background-color: #464646;
-        z-index: 1;
+        width: 75%;
+        margin-top: 6px;
     }
-    #dontShow {
-        display: unset;
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
-    .topnav a:not(:nth-child(1)) {
-        display: none;
-    }
-    #doShow {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-        background-color: #464646;
-    }
+    
     h1 {
         position: relative;
+        display: inline-block;
         background-color: #464646;
         color: orange;
         font-size: 22px;
-        padding: 26.5px 40px 25px 10px;
+        padding: 25px 55px 25px 55px;
     }
-    #orderNow {
-        width: 800px;
-        height: 80px;
-        display: none;
-    }
-    #orderNow1 {
-        width: 200px;
-        display: block;
+    
+    #homePageFont {
+        position: relative;
+        top: 250px;
+        display: flex;
         justify-content: center;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        width: 100%;
-        cursor: pointer;
+        text-align: center;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 50px;
+        color: white;
+        padding-top: 30px;
+        background-color: rgba(0, 0, 0, 0.4);
         z-index: 2;
     }
-    #OrderOnlineText {
-        border-radius: 0px;
-        padding: 10px 0 10px 0;
-        position: absolute;
-        display: block;
-        margin: 0;
+    
+    #homePageFontSub {
+        position: relative;
+        top: 250px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 50px;
+        padding-bottom: 30px;
+        color: orange;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+        font-style: italic;
     }
-    #OrderOnlineText1 {
+    
+    @font-face {
+        font-family: "BlackJack";
+        src: url("font/blackjack.otf");
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #464646;
+        display: flex;
+        justify-content: center;
+        text-transform: capitalize;
+        font-family: "Century Gothic", sans-serif;
+        a {
+            position: relative;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 0px 20px 0px 20px;
+            text-decoration: none;
+            background-color: #464646;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            float: left;
+        }
+    }
+    
+    #slide {
+        background-image: url("../images/background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 900px;
+        position: absolute;
+        top: 80px;
+        z-index: -1;
+    }
+    
+    #mainPagePicOne {
+        position: relative;
+        top: 255px;
+        right: 225px;
+    }
+    
+    #picturesDescription1 {
+        position: relative;
+        top: 525px;
+        width: 410px;
+        left: 230px;
+        display: block;
+        padding: 20px 10px 20px 10px;
+        text-align: justify;
+    }
+    
+    #mainPagePicTwo {
+        position: relative;
+        top: 1080px;
+        left: 230px;
+    }
+    
+    #picturesDescription2 {
+        position: relative;
+        top: 340px;
+        width: 415px;
+        right: 230px;
+        display: block;
+        padding: 20px 10px 20px 10px;
+        text-align: justify;
+    }
+    
+    .topnav a:hover {
+        color: orange;
+    }
+    
+    .topnav a.active {
+        color: orange;
+    }
+    
+    .topnav .icon {
+        display: none;
+        position: relative;
+        top: 30px;
+    }
+    
+    #dontShow {
+        display: none;
+    }
+    
+    #orderNow {
+        position: relative;
+        width: 200px;
+        height: 80px;
+        cursor: pointer;
+    }
+    
+    #orderNow1 {
+        overflow: hidden;
+        height: 100px;
+        display: none;
+    }
+    
+    #OrderOnlineText {
         background-color: orange;
         color: white;
         font-weight: bold;
         text-transform: capitalize;
         font-family: "Century Gothic", sans-serif;
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
-        padding: 10px 0px 10px 0;
+        border-radius: 100px;
+        padding: 10px 0 10px 0;
+        margin-top: 20px;
     }
-    #mainPagePicOne {
-        top: 730px;
-        right: 0px;
-        width: 75%;
-        height: 80%;
+    
+    #imageBackground {
+        width: 100%;
     }
-    #picturesDescription1 {
-        border: 3px orange solid;
-        position: relative;
-        display: block;
-        top: 700px;
-        width: 75%;
-        left: 0px;
-        padding: 20px 10px 20px 10px;
+    
+    img {
+        z-index: 1;
     }
-    #mainPagePicTwo {
-        position: relative;
-        top: 650px;
-        left: 0px;
-        width: 75%;
-        height: 80%;
-        display: flex;
-        justify-content: center;
+    
+    .mySlides {
+        display: none;
     }
-    #picturesDescription2 {
-        border: 3px orange solid;
-        position: relative;
-        display: block;
-        top: 770px;
-        width: 75%;
-        left: 0px;
-        padding: 20px 10px 20px 10px;
+    
+    img {
+        vertical-align: middle;
     }
     /* Slideshow container */
+    
     .slideshow-container {
+        max-width: 1000px;
         position: relative;
         margin: auto;
-        height: 50%;
-        top: 900px;
+        top: 550px;
         /*right: 200px;*/
+        margin-bottom: 50px;
     }
-}
-
-@media screen and (max-width: 1290px) {
-    .topnav.responsive {
+    /* Number text (1/10 etc) */
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0px;
+    }
+    /* Fading animation */
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    #footer {
         position: relative;
-        a {
-            float: none;
-            display: block;
-            padding: 10px 0px 10px 0px;
+        top: 160px;
+        width: 100%;
+        height: 35px;
+        background-color: #464646;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    
+    #indexfooter {
+        position: relative;
+        top: 600px;
+        width: 100%;
+        height: 35px;
+        background-color: #464646;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
         }
-        .icon {
-            position: relative;
-            float: right;
-            top: 30px;
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* On smaller screens, decrease text size */
+    
+    @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+    
+    @media screen and (max-width: 1290px) {
+        .topnav {
+            overflow: hidden;
+            float: left;
+            display: block;
+            background-color: black;
+            width: 100%;
             background-color: #464646;
-            padding: 0px 20px 0px 20px;
             z-index: 1;
         }
-        #slide {
-            background-image: url("../images/background.jpg");
-            background-size: cover;
-            width: 100%;
-            height: 900px;
-            position: absolute;
-            top: 120px;
-        }
         #dontShow {
-            padding: 0;
+            display: unset;
+        }
+        .topnav a:not(:nth-child(1)) {
+            display: none;
+        }
+        #doShow {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+            background-color: #464646;
+        }
+        h1 {
+            position: relative;
+            background-color: #464646;
+            color: orange;
+            font-size: 22px;
+            padding: 26.5px 40px 25px 10px;
+        }
+        #orderNow {
+            width: 800px;
+            height: 80px;
+            display: none;
+        }
+        #orderNow1 {
+            width: 200px;
+            display: block;
+            justify-content: center;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            width: 100%;
+            cursor: pointer;
+            z-index: 2;
+        }
+        #OrderOnlineText {
+            border-radius: 0px;
+            padding: 10px 0 10px 0;
+            position: absolute;
+            display: block;
+            margin: 0;
+        }
+        #OrderOnlineText1 {
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-family: "Century Gothic", sans-serif;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 0px 10px 0;
+        }
+        #mainPagePicOne {
+            top: 730px;
+            right: 0px;
+            width: 75%;
+            height: 80%;
+        }
+        #picturesDescription1 {
+            position: relative;
+            display: block;
+            top: 700px;
+            width: 75%;
+            left: 0px;
+            padding: 20px 10px 20px 10px;
+        }
+        #mainPagePicTwo {
+            position: relative;
+            top: 650px;
+            left: 0px;
+            width: 75%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+        }
+        #picturesDescription2 {
+            position: relative;
+            display: block;
+            top: 770px;
+            width: 75%;
+            left: 0px;
+            padding: 20px 10px 20px 10px;
+        }
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+            height: 50%;
+            top: 900px;
+            /*right: 200px;*/
+            margin-bottom: 50px;
         }
     }
-}
-
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 600px) {
-    .col-25,
-    .col-75,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
+    
+    @media screen and (max-width: 1290px) {
+        .topnav.responsive {
+            position: relative;
+            a {
+                float: none;
+                display: block;
+                padding: 10px 0px 10px 0px;
+            }
+            .icon {
+                position: relative;
+                float: right;
+                top: 30px;
+                background-color: #464646;
+                padding: 0px 20px 0px 20px;
+                z-index: 1;
+            }
+            #slide {
+                background-image: url("../images/background.jpg");
+                background-size: cover;
+                width: 100%;
+                height: 900px;
+                position: absolute;
+                top: 120px;
+            }
+            #dontShow {
+                padding: 0;
+            }
+        }
     }
-    input[type=submit] {
-        position: relative;
-        left: 0px;
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 600px) {
+        .col-25,
+        .col-75,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+        input[type=submit] {
+            position: relative;
+            left: 0px;
+        }
     }
-}
-
-
-/*loading wheel desgine */
-
-#pagesLoading {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    margin: -75px 0 0 -75px;
-    border: 16px solid rgba(0, 0, 0, 0.80);
-    border-radius: 100%;
-    border-top: 16px solid orange;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-
-/* Animation for the loading circle *This might look similar to the W3 
+    /*loading wheel desgine */
+    
+    #pagesLoading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        margin: -75px 0 0 -75px;
+        border: 16px solid rgba(0, 0, 0, 0.80);
+        border-radius: 100%;
+        border-top: 16px solid orange;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    /* Animation for the loading circle *This might look similar to the W3 
 school because i user the website loader as referanced: * */
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
+    
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
     }
-    100% {
-        -webkit-transform: rotate(360deg);
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
+    
+    .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s
     }
-    100% {
-        transform: rotate(360deg);
+    
+    @-webkit-keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0px;
+            opacity: 1
+        }
     }
-}
-
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
+    
+    @keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
     }
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
-}
-
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-    to {
-        bottom: 0;
-        opacity: 1
-    }
-}
-
-
-/* Animation ends*/
+    /* Animation ends*/

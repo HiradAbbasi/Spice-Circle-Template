@@ -26,7 +26,7 @@ for (let i = 0; i < inputs.length - 2; i++) {
 }
 
 //Checks for empty fields every 5 seconds
-setInterval(checkEmptyFields, 5000);
+setInterval(checkEmptyFields, 1000);
 
 function signUp() {
     //This is an addition of confirming the user's password
