@@ -1,20 +1,24 @@
-#floatLeft {
-    position: relative;
-    top: 20px;
-}
-
 h2 {
     color: orange;
     font-size: 30px;
     font-style: italic;
+    position: relative;
+    top: 590px;
 }
 
 h3 {
+    position: relative;
+    top: 590px;
     font-size: 22px;
 }
 
 #OpeningTime {
     color: orange;
+}
+
+#Times {
+    position: relative;
+    top: 590px;
 }
 
 #WeekDay {
@@ -25,22 +29,14 @@ h3 {
     font-style: italic;
 }
 
-@media screen and (max-width: 1010px) {
-    #googleMapLocation {
-        width: 750px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    #googleMapLocation {
-        width: 500px;
-    }
+#googleMapLocation {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    z-index: -2;
 }
 
 @media screen and (max-width: 508px) {
-    #googleMapLocation {
-        width: auto;
-    }
     #WeekDay {
         font-size: 16px;
     }

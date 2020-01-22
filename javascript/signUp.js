@@ -13,8 +13,6 @@ let telephoneInput = document.getElementById("telephone");
 let emailInput = document.getElementById("email");
 let passwordInput = document.getElementById("password");
 
-let acceptedCookies = confirm("Do You Accept Our Use of Cookies? Click OK for Yes and Cancel for No");
-
 for (let i = 0; i < inputs.length - 2; i++) {
     inputs[i].addEventListener("focusin", function() {
         this.style.backgroundColor = "orange";
@@ -26,7 +24,7 @@ for (let i = 0; i < inputs.length - 2; i++) {
 }
 
 //Checks for empty fields every 5 seconds
-setInterval(checkEmptyFields, 1000);
+setInterval(checkEmptyFields, 5000);
 
 function signUp() {
     //This is an addition of confirming the user's password
