@@ -133,11 +133,8 @@ function signUp() {
     if (signUpPassed) {
         error.innerHTML += "<p>Sending....</p>";
         error.innerHTML += "<p>Check your email for confirmation</p>";
-
-        setInterval(checkEmptyFields, 10000);
     } else {
         getElementsById("FirstName").style.backgroundColor = "orange";
-
     }
 }
 
@@ -179,7 +176,7 @@ function checkLastName() {
 }
 
 function checkTelephone() {
-    let telephonePattern = /^\(\d\d\d\)-\d\d\d-\d\d\d\d$/g;
+    let telephonePattern = /^\d\d\d\-\d\d\d-\d\d\d\d$/g;
 
     return telephonePattern.test(telephoneInput.value);
 }
